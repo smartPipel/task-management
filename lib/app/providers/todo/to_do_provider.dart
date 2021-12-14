@@ -17,6 +17,7 @@ class ToDoProvider with ChangeNotifier {
   bool? _isDone;
   Timestamp _createdAt = Timestamp.now();
   Timestamp? _doneEstimate;
+  String? _length = '0';
 
   String get getId => _id!;
   String get getTitle => _title!;
@@ -25,6 +26,12 @@ class ToDoProvider with ChangeNotifier {
   Timestamp get getCreatedAt => _createdAt;
   Timestamp get getDoneEstimate => _doneEstimate!;
   String get getColor => _color!;
+  String get getToDoLength => _length!.isEmpty ? '0' : _length!;
+
+  void setToDoLength(String length) {
+    _length = length;
+    notifyListeners();
+  }
 
   void setTitle(String title) {
     _title = title;

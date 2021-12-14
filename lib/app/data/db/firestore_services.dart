@@ -19,7 +19,6 @@ class FirestoreServices {
     final stream = _collectionReference
         .doc('ObNh7bwCs8r43qJK2jci')
         .collection('to-do')
-        // .where('isDone', isEqualTo: false)
         .snapshots();
 
     return stream
@@ -68,12 +67,11 @@ class FirestoreServices {
     });
   }
 
-  Future getIsDoneLength(bool done) async {
-    return await _collectionReference
+  Stream getIsDoneLength(bool done) {
+    return _collectionReference
         .doc('ObNh7bwCs8r43qJK2jci')
         .collection('to-do')
         .where('isDone', isEqualTo: done == true ? true : false)
-        .snapshots()
-        .length;
+        .snapshots();
   }
 }

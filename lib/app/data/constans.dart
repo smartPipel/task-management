@@ -5,6 +5,7 @@ const double borderRadius = 15.0;
 const double spacing = 24;
 const double subSpacing = 16;
 const double superSubSpacing = 12;
+const String illustrationAssets = 'assets/illustrations/';
 
 height(BuildContext context) => MediaQuery.of(context).size.height;
 width(BuildContext context) => MediaQuery.of(context).size.width;

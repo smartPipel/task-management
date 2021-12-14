@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:to_do_list/app/data/constans.dart';
-import 'package:to_do_list/app/providers/todo/to_do_provider.dart';
+import 'package:to_do_list/routes/routes.dart';
 
 class AppBarComponents extends StatelessWidget {
-  const AppBarComponents({Key? key}) : super(key: key);
-
+  const AppBarComponents({Key? key, required this.onPressed}) : super(key: key);
+  final Function onPressed;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -45,15 +44,7 @@ class AppBarComponents extends StatelessWidget {
               ],
             ),
             child: IconButton(
-              onPressed: () {
-                var todo = Provider.of<ToDoProvider>(context, listen: false);
-                todo.setTitle('alvin');
-                todo.setDescription('desc');
-                todo.setIsDone(false);
-                todo.setDoneEstimate(DateTime.now());
-                todo.setColor(Colors.blueAccent.value.toString());
-                todo.saveToDo();
-              },
+              onPressed: () => onPressed.call(),
               icon: const Icon(
                 Icons.add,
                 color: Colors.white,
