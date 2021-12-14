@@ -19,7 +19,7 @@ class FirestoreServices {
         .collection('data_collections')
         .doc('ObNh7bwCs8r43qJK2jci')
         .collection('to-do')
-        .orderBy('isDone')
+        // .where('isDone', isEqualTo: false)
         .snapshots();
 
     return stream
