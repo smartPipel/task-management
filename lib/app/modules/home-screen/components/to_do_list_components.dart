@@ -6,12 +6,12 @@ import 'package:to_do_list/app/data/models/to_do.dart';
 import 'package:to_do_list/app/providers/todo/to_do_provider.dart';
 
 class ToDoListComponents extends StatelessWidget {
-  ToDoListComponents(
+  const ToDoListComponents(
       {Key? key, required this.data, required this.i, required this.todo})
       : super(key: key);
-  ToDoProvider? todo;
-  List<ToDo> data;
-  int i;
+  final ToDoProvider? todo;
+  final List<ToDo> data;
+  final int i;
 
   @override
   Widget build(BuildContext context) {

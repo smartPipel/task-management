@@ -1,12 +1,5 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter_slidable/flutter_slidable.dart';
-import 'package:intl/intl.dart';
-import 'package:percent_indicator/percent_indicator.dart';
 import 'package:provider/provider.dart';
-import 'package:timelines/timelines.dart';
-import 'package:to_do_list/app/data/constans.dart';
 import 'package:to_do_list/app/data/models/to_do.dart';
 import 'package:to_do_list/app/modules/home-screen/components/app_bar_components.dart';
 import 'package:to_do_list/app/modules/home-screen/components/page_title.dart';
