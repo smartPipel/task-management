@@ -41,6 +41,7 @@ class ProgressCard extends StatelessWidget {
             flex: 4,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 SizedBox(
                   child: Row(

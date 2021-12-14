@@ -7,14 +7,17 @@ class ToDo {
   bool isDone;
   Timestamp createdAt;
   Timestamp doneEstimate;
+  String color;
 
-  ToDo(
-      {required this.id,
-      required this.title,
-      required this.description,
-      required this.isDone,
-      required this.createdAt,
-      required this.doneEstimate});
+  ToDo({
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.isDone,
+    required this.createdAt,
+    required this.doneEstimate,
+    required this.color,
+  });
 
   Map<String, dynamic> createMap() {
     return {
@@ -24,6 +27,7 @@ class ToDo {
       'isDone': isDone,
       'createdAt': createdAt,
       'doneEstimate': doneEstimate,
+      'color': color,
     };
   }
 
@@ -33,5 +37,6 @@ class ToDo {
         description = snapshot['description'],
         isDone = snapshot['isDone'],
         createdAt = snapshot['createdAt'],
-        doneEstimate = snapshot['doneEstimate'];
+        doneEstimate = snapshot['doneEstimate'],
+        color = snapshot['color'];
 }

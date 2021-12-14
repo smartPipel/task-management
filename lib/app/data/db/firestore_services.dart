@@ -6,6 +6,8 @@ import 'package:to_do_list/app/data/models/to_do.dart';
 class FirestoreServices {
   static FirestoreServices instance = FirestoreServices._singleton();
   final FirebaseFirestore firestore = FirebaseFirestore.instance;
+  final CollectionReference _collectionReference =
+      FirebaseFirestore.instance.collection('data_collections');
 
   FirestoreServices._singleton();
 
@@ -14,8 +16,7 @@ class FirestoreServices {
   }
 
   Stream<List<ToDo>> getToDoList() {
-    final stream = firestore
-        .collection('data_collections')
+    final stream = _collectionReference
         .doc('ObNh7bwCs8r43qJK2jci')
         .collection('to-do')
         // .where('isDone', isEqualTo: false)
@@ -26,8 +27,7 @@ class FirestoreServices {
   }
 
   Future<void> createToDo(ToDo todo) async {
-    return await firestore
-        .collection('data_collections')
+    return await _collectionReference
         .doc('ObNh7bwCs8r43qJK2jci')
         .collection('to-do')
         .doc()
@@ -42,40 +42,38 @@ class FirestoreServices {
         );
   }
 
-  Future<void> removeToDo(String id) async {
-    await firestore
-        .collection('data_collections')
+  Future removeToDo(String id) async {
+    await _collectionReference
         .doc('ObNh7bwCs8r43qJK2jci')
         .collection('to-do')
         .doc(id)
         .delete();
   }
 
-  Future<void> setDone(String id, String direction) async {
-    if (direction == 'startToEnd') {
-      await firestore
-          .collection('data_collections')
-          .doc('ObNh7bwCs8r43qJK2jci')
-          .collection('to-do')
-          .doc(id)
-          .update({'isDone': true});
-    } else if (direction == 'endToStart') {
-      await firestore
-          .collection('data_collections')
-          .doc('ObNh7bwCs8r43qJK2jci')
-          .collection('to-do')
-          .doc(id)
-          .update({'isDone': false});
-    }
-  }
-
-  Future getId() async {
-    return firestore
-        .collection('data_collections')
+  Future<void> setDone(String id, bool done) async {
+    DocumentReference documentReference = _collectionReference
         .doc('ObNh7bwCs8r43qJK2jci')
         .collection('to-do')
-        .doc()
+        .doc(id);
+    return await firestore.runTransaction((transaction) async {
+      DocumentSnapshot snapshot = await transaction.get(documentReference);
+
+      if (!snapshot.exists) {
+        throw Exception('Data tidak ada');
+      }
+
+      bool isDone = done;
+
+      transaction.update(documentReference, {'isDone': isDone});
+    });
+  }
+
+  Future getIsDoneLength(bool done) async {
+    return await _collectionReference
+        .doc('ObNh7bwCs8r43qJK2jci')
+        .collection('to-do')
+        .where('isDone', isEqualTo: done == true ? true : false)
         .snapshots()
-        .map((event) => event.id);
+        .length;
   }
 }

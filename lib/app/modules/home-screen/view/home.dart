@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:to_do_list/app/data/constans.dart';
 import 'package:to_do_list/app/data/models/to_do.dart';
 import 'package:to_do_list/app/modules/home-screen/components/app_bar_components.dart';
 import 'package:to_do_list/app/modules/home-screen/components/page_title.dart';
@@ -37,25 +38,31 @@ class _HomeScreenState extends State<HomeScreen> {
                 stream: context.watch<ToDoProvider>().getData(),
                 builder: (context, snapshot) {
                   final _data = snapshot.data;
-                  return ListView.builder(
-                    physics: const BouncingScrollPhysics(),
-                    itemCount: _data?.length ?? 0,
-                    itemBuilder: (context, i) {
-                      var todo =
-                          Provider.of<ToDoProvider>(context, listen: false);
-                      if (snapshot.connectionState == ConnectionState.waiting) {
-                        return const CircularProgressIndicator();
-                      } else {
-                        if (_data!.isNotEmpty) {
-                          return ToDoListComponents(
-                              data: _data, i: i, todo: todo);
-                        } else if (_data.isEmpty) {
-                          return const Text('no data');
+                  if (_data!.isNotEmpty) {
+                    return ListView.builder(
+                      physics: const BouncingScrollPhysics(),
+                      itemCount: _data.length,
+                      itemBuilder: (context, i) {
+                        var todo =
+                            Provider.of<ToDoProvider>(context, listen: false);
+                        if (_data.isNotEmpty) {
+                          if (snapshot.connectionState ==
+                              ConnectionState.waiting) {
+                            return const CircularProgressIndicator();
+                          } else {
+                            return ToDoListComponents(
+                                data: _data, i: i, todo: todo);
+                          }
                         }
                         return const CircularProgressIndicator();
-                      }
-                    },
-                  );
+                      },
+                    );
+                  }
+                  return Center(
+                      child: Text(
+                    'Tidak ada tugas',
+                    style: defaultFontsStyle(),
+                  ));
                 },
               ),
             ),

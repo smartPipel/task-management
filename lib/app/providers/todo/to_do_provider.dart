@@ -3,6 +3,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:to_do_list/app/data/db/firestore_services.dart';
 import 'package:to_do_list/app/data/models/to_do.dart';
 
@@ -12,6 +13,7 @@ class ToDoProvider with ChangeNotifier {
   String? _id;
   String? _title;
   String? _description;
+  String? _color;
   bool? _isDone;
   Timestamp _createdAt = Timestamp.now();
   Timestamp? _doneEstimate;
@@ -22,9 +24,15 @@ class ToDoProvider with ChangeNotifier {
   bool get getIsDone => _isDone!;
   Timestamp get getCreatedAt => _createdAt;
   Timestamp get getDoneEstimate => _doneEstimate!;
+  String get getColor => _color!;
 
   void setTitle(String title) {
     _title = title;
+    notifyListeners();
+  }
+
+  void setColor(String color) {
+    _color = color;
     notifyListeners();
   }
 
@@ -54,6 +62,7 @@ class ToDoProvider with ChangeNotifier {
 
   void saveToDo() {
     var _toDo = ToDo(
+        color: _color!,
         id: FirebaseFirestore.instance
             .collection('data_collections')
             .doc()
@@ -79,7 +88,7 @@ class ToDoProvider with ChangeNotifier {
     return todo;
   }
 
-  void isDoneSet(String id, String dismissDirection) {
-    _db.setDone(id, dismissDirection);
+  void isDoneSet(String id, bool done) {
+    _db.setDone(id, done);
   }
 }

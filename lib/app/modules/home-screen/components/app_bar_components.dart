@@ -51,7 +51,7 @@ class AppBarComponents extends StatelessWidget {
                 todo.setDescription('desc');
                 todo.setIsDone(false);
                 todo.setDoneEstimate(DateTime.now());
-
+                todo.setColor(Colors.blueAccent.value.toString());
                 todo.saveToDo();
               },
               icon: const Icon(

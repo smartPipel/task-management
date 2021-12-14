@@ -36,24 +36,25 @@ class ToDoListComponents extends StatelessWidget {
         endActionPane: ActionPane(
           motion: const ScrollMotion(),
           children: [
-            SlidableAction(
-              foregroundColor: Colors.green,
-              onPressed: (context) {
-                todo?.isDoneSet(data[i].id, 'endToStart');
-              },
-              backgroundColor: Colors.transparent,
-              label: 'Selesai',
-              icon: Icons.done,
-            ),
-            SlidableAction(
-              foregroundColor: Colors.redAccent,
-              onPressed: (context) {
-                todo?.isDoneSet(data[i].id, 'startToEnd');
-              },
-              backgroundColor: Colors.transparent,
-              label: 'Hapus',
-              icon: Icons.delete_outlined,
-            )
+            data[i].isDone == false
+                ? SlidableAction(
+                    foregroundColor: Colors.green,
+                    onPressed: (context) {
+                      todo?.isDoneSet(data[i].id, true);
+                    },
+                    backgroundColor: Colors.transparent,
+                    label: 'Selesai',
+                    icon: Icons.done,
+                  )
+                : SlidableAction(
+                    foregroundColor: Colors.redAccent,
+                    onPressed: (context) {
+                      todo?.isDoneSet(data[i].id, false);
+                    },
+                    backgroundColor: Colors.transparent,
+                    label: 'Ulangi',
+                    icon: Icons.settings_backup_restore_rounded,
+                  )
           ],
           dismissible: DismissiblePane(
             onDismissed: () {
@@ -95,7 +96,8 @@ class ToDoListComponents extends StatelessWidget {
           contents: Container(
             height: 80,
             decoration: BoxDecoration(
-                color: Colors.yellow, borderRadius: BorderRadius.circular(15)),
+                color: Color(int.parse(data[i].color)),
+                borderRadius: BorderRadius.circular(15)),
             child: ListTile(
               title: Text(data[i].title),
             ),
