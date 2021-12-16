@@ -1,1 +1,1 @@
-export './route_generate.dart';
+export 'routes_generate.dart';

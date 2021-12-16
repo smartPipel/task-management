@@ -3,7 +3,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:to_do_list/app/utils/helpers/date_time.dart';
+import 'package:to_do_list/app/utils/helpers/date_time_helper.dart';
 import 'package:to_do_list/app/utils/services/firestore/firestore_services.dart';
 import 'package:to_do_list/app/utils/services/models/to_do.dart';
 

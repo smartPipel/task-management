@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
-import 'package:intl/intl.dart';
 import 'package:timelines/timelines.dart';
-
+import 'package:to_do_list/app/constants/app_constans.dart';
 import 'package:to_do_list/app/modules/home-screen/providers/home_screen_providers.dart';
-import 'package:to_do_list/app/utils/helpers/date_time.dart';
+import 'package:to_do_list/app/utils/helpers/date_time_helper.dart';
 import 'package:to_do_list/app/utils/services/models/to_do.dart';
 
 class ToDoListComponents extends StatelessWidget {
@@ -18,7 +17,7 @@ class ToDoListComponents extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(top: 6, bottom: 6),
+      padding: const EdgeInsets.only(top: smallSpacing, bottom: smallSpacing),
       child: Slidable(
         key: ValueKey<ToDo>(data[i]),
         endActionPane: ActionPane(

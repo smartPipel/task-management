@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:to_do_list/app/constants/constans.dart';
+import 'package:to_do_list/app/constants/app_constans.dart';
 import 'package:to_do_list/app/modules/home-screen/providers/home_screen_providers.dart';
 
 class ToDoListTitleSections extends StatelessWidget {
@@ -10,7 +10,7 @@ class ToDoListTitleSections extends StatelessWidget {
   Widget build(BuildContext context) {
     final String length = context.watch<HomeScreenProvider>().getToDoLength;
     return Container(
-      margin: const EdgeInsets.all(spacing),
+      margin: const EdgeInsets.all(mainSpacing),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

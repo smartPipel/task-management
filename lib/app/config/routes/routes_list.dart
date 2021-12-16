@@ -1,4 +1,4 @@
-part of './route_generate.dart';
+part of 'routes_generate.dart';
 
 class Routes {
   Routes._();

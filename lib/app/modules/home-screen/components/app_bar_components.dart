@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:to_do_list/app/constants/constans.dart';
+import 'package:to_do_list/app/constants/app_constans.dart';
 
 class AppBarComponents extends StatelessWidget {
   const AppBarComponents({Key? key, required this.onPressed}) : super(key: key);
@@ -16,7 +16,8 @@ class AppBarComponents extends StatelessWidget {
             child: Container(
               width: 50,
               height: 50,
-              margin: const EdgeInsets.only(left: spacing, top: spacing),
+              margin:
+                  const EdgeInsets.only(left: mainSpacing, top: mainSpacing),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(borderRadius),
                   image: const DecorationImage(
@@ -29,7 +30,7 @@ class AppBarComponents extends StatelessWidget {
           Container(
             width: 50,
             height: 50,
-            margin: const EdgeInsets.only(top: spacing, right: spacing),
+            margin: const EdgeInsets.only(top: mainSpacing, right: mainSpacing),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(borderRadius),
               color: Colors.pink,

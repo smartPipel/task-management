@@ -1,8 +1,7 @@
 // ignore_for_file: avoid_print
-
 import 'package:calendar_timeline/calendar_timeline.dart';
 import 'package:flutter/material.dart';
-import 'package:to_do_list/app/constants/constans.dart';
+import 'package:to_do_list/app/constants/app_constans.dart';
 
 class CreateToDo extends StatefulWidget {
   const CreateToDo({Key? key}) : super(key: key);
@@ -16,7 +15,7 @@ class _CreateToDoState extends State<CreateToDo> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Container(
+        body: SizedBox(
           width: width(context),
           height: height(context),
           // color: Colors.grey,
@@ -26,7 +25,7 @@ class _CreateToDoState extends State<CreateToDo> {
               Expanded(
                 flex: 1,
                 child: Container(
-                  margin: const EdgeInsets.all(spacing),
+                  margin: const EdgeInsets.all(mainSpacing),
                   // color: Colors.red,
                   width: width(context),
                   child: Row(
@@ -42,7 +41,7 @@ class _CreateToDoState extends State<CreateToDo> {
                           icon: const Icon(Icons.chevron_left),
                         ),
                       ),
-                      Container(
+                      SizedBox(
                         child: Text(
                           'Buat tugas',
                           style: defaultFontsStyle(fontSize: 18),

@@ -2,9 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:to_do_list/app/constants/constans.dart';
+import 'package:to_do_list/app/constants/app_constans.dart';
 import 'package:to_do_list/app/modules/home-screen/providers/home_screen_providers.dart';
-import 'package:to_do_list/app/utils/helpers/precentage.dart';
+import 'package:to_do_list/app/utils/helpers/precentage_helper.dart';
 import 'package:to_do_list/app/utils/services/models/to_do.dart';
 
 class ProgressCard extends StatelessWidget {
@@ -13,7 +13,7 @@ class ProgressCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(superSubSpacing),
+      padding: const EdgeInsets.all(mediumSpacing),
       width: width(context),
       // margin: const EdgeInsets.only(bottom: spacing),
       decoration: BoxDecoration(

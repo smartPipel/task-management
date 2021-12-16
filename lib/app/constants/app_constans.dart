@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 const double borderRadius = 15.0;
-const double spacing = 24;
-const double subSpacing = 16;
-const double superSubSpacing = 12;
+const double mainSpacing = 24;
+const double bigSpacing = 16;
+const double mediumSpacing = 12;
+const double smallSpacing = 6;
 const String illustrationAssets = 'assets/illustrations/';
 
 height(BuildContext context) => MediaQuery.of(context).size.height;

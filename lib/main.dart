@@ -31,7 +31,7 @@ void main() async {
       debugShowCheckedModeBanner: false,
       title: 'To-Do',
       initialRoute: Routes.homeRoute,
-      onGenerateRoute: RouteGenerate.genrate,
+      onGenerateRoute: RoutesGenerate.genrate,
     ),
   ));
 }
