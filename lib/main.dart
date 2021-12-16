@@ -2,10 +2,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:to_do_list/app/data/db/firestore_services.dart';
-import 'package:to_do_list/app/data/models/to_do.dart';
-import 'package:to_do_list/app/providers/todo/to_do_provider.dart';
-import 'package:to_do_list/routes/routes.dart';
+import 'package:to_do_list/app/config/routes/routes.dart';
+import 'package:to_do_list/app/modules/home-screen/providers/home_screen_providers.dart';
+import 'package:to_do_list/app/utils/services/firestore/firestore_services.dart';
+import 'package:to_do_list/app/utils/services/models/to_do.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,7 +21,7 @@ void main() async {
   runApp(MultiProvider(
     providers: [
       // ChangeNotifierProvider<ToDoProvider>(create: (_) => ToDoProvider()),
-      ChangeNotifierProvider.value(value: ToDoProvider()),
+      ChangeNotifierProvider.value(value: HomeScreenProvider()),
       StreamProvider<List<ToDo>>.value(
         value: _db.getToDoList(),
         initialData: const [],

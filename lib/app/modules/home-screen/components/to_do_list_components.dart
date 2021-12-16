@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:intl/intl.dart';
 import 'package:timelines/timelines.dart';
-import 'package:to_do_list/app/data/models/to_do.dart';
-import 'package:to_do_list/app/providers/todo/to_do_provider.dart';
+
+import 'package:to_do_list/app/modules/home-screen/providers/home_screen_providers.dart';
+import 'package:to_do_list/app/utils/helpers/date_time.dart';
+import 'package:to_do_list/app/utils/services/models/to_do.dart';
 
 class ToDoListComponents extends StatelessWidget {
   const ToDoListComponents(
       {Key? key, required this.data, required this.i, required this.todo})
       : super(key: key);
-  final ToDoProvider? todo;
+  final HomeScreenProvider? todo;
   final List<ToDo> data;
   final int i;
 
@@ -18,21 +20,7 @@ class ToDoListComponents extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.only(top: 6, bottom: 6),
       child: Slidable(
-        // secondaryBackground: Container(
-        //   color: Colors.blueAccent,
-        // ),
         key: ValueKey<ToDo>(data[i]),
-        // onUpdate: (details) {
-        //   print('onupdate');
-        // },
-        // onResize: () {
-        //   print('onresize');
-        // },
-        // background: Container(
-        //   decoration:
-        //       const BoxDecoration(color: Colors.amber),
-        // ),
-        // dismissThresholds: (),
         endActionPane: ActionPane(
           motion: const ScrollMotion(),
           children: [
@@ -73,9 +61,7 @@ class ToDoListComponents extends StatelessWidget {
               indicator: RotatedBox(
                 quarterTurns: 1,
                 child: Text(
-                  DateFormat.jm()
-                      .format(data[i].doneEstimate.toDate())
-                      .toString(),
+                  dateHourFormat(toDateTime(data[i].doneEstimate)),
                   style: const TextStyle(
                       fontSize: 10,
                       color: Colors.blueAccent,

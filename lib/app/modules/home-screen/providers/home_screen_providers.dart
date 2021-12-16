@@ -1,13 +1,13 @@
 // ignore_for_file: avoid_print
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:to_do_list/app/data/db/firestore_services.dart';
-import 'package:to_do_list/app/data/models/to_do.dart';
+import 'package:to_do_list/app/utils/helpers/date_time.dart';
+import 'package:to_do_list/app/utils/services/firestore/firestore_services.dart';
+import 'package:to_do_list/app/utils/services/models/to_do.dart';
 
-class ToDoProvider with ChangeNotifier {
+class HomeScreenProvider with ChangeNotifier {
   final _db = FirestoreServices();
 
   String? _id;
@@ -54,7 +54,7 @@ class ToDoProvider with ChangeNotifier {
   }
 
   void setDoneEstimate(DateTime doneEstimate) {
-    _doneEstimate = Timestamp.fromDate(doneEstimate);
+    _doneEstimate = toTimestamp(doneEstimate);
     notifyListeners();
   }
 
@@ -69,18 +69,19 @@ class ToDoProvider with ChangeNotifier {
 
   void saveToDo() {
     var _toDo = ToDo(
-        color: _color!,
-        id: FirebaseFirestore.instance
-            .collection('data_collections')
-            .doc()
-            .collection('ObNh7bwCs8r43qJK2jci')
-            .doc()
-            .id,
-        title: getTitle,
-        description: getDescription,
-        isDone: getIsDone,
-        createdAt: getCreatedAt,
-        doneEstimate: getDoneEstimate);
+      color: _color!,
+      id: FirebaseFirestore.instance
+          .collection('data_collections')
+          .doc()
+          .collection('ObNh7bwCs8r43qJK2jci')
+          .doc()
+          .id,
+      title: getTitle,
+      description: getDescription,
+      isDone: getIsDone,
+      createdAt: getCreatedAt,
+      doneEstimate: getDoneEstimate,
+    );
 
     _db.createToDo(_toDo);
     print(_toDo.createdAt.toString());

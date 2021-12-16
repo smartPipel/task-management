@@ -1,5 +1,8 @@
+// ignore_for_file: avoid_print
+
+import 'package:calendar_timeline/calendar_timeline.dart';
 import 'package:flutter/material.dart';
-import 'package:to_do_list/app/data/constans.dart';
+import 'package:to_do_list/app/constants/constans.dart';
 
 class CreateToDo extends StatefulWidget {
   const CreateToDo({Key? key}) : super(key: key);
@@ -23,7 +26,7 @@ class _CreateToDoState extends State<CreateToDo> {
               Expanded(
                 flex: 1,
                 child: Container(
-                  margin: EdgeInsets.all(spacing),
+                  margin: const EdgeInsets.all(spacing),
                   // color: Colors.red,
                   width: width(context),
                   child: Row(
@@ -58,6 +61,20 @@ class _CreateToDoState extends State<CreateToDo> {
                       children: [
                         makeInput(label: 'Judul'),
                         makeInput(label: 'Deskripsi'),
+                        CalendarTimeline(
+                          initialDate: DateTime.now(),
+                          firstDate: DateTime(2019, 1, 15),
+                          lastDate: DateTime(2022, 11, 20),
+                          onDateSelected: (date) => print(date),
+                          leftMargin: 20,
+                          monthColor: Colors.blueGrey,
+                          dayColor: Colors.teal[200],
+                          activeDayColor: Colors.white,
+                          activeBackgroundDayColor: Colors.redAccent[100],
+                          dotsColor: Colors.pinkAccent,
+                          selectableDayPredicate: (date) => date.day != 23,
+                          locale: 'id_ID',
+                        ),
                       ],
                     ),
                   ),
@@ -85,7 +102,8 @@ class _CreateToDoState extends State<CreateToDo> {
         TextField(
           obscureText: obsureText,
           decoration: InputDecoration(
-            contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
+            contentPadding:
+                const EdgeInsets.symmetric(vertical: 0, horizontal: 10),
             enabledBorder: OutlineInputBorder(
               borderSide: BorderSide(
                 color: Colors.grey[400]!,
@@ -95,7 +113,7 @@ class _CreateToDoState extends State<CreateToDo> {
                 borderSide: BorderSide(color: Colors.grey[400]!)),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 30,
         )
       ],

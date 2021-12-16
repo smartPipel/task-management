@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:to_do_list/app/data/constans.dart';
+import 'package:to_do_list/app/constants/constans.dart';
 
 class PageTitle extends StatelessWidget {
   const PageTitle({Key? key}) : super(key: key);

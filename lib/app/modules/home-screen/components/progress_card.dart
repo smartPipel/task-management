@@ -2,13 +2,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:to_do_list/app/data/constans.dart';
-import 'package:to_do_list/app/data/models/to_do.dart';
-import 'package:to_do_list/app/providers/todo/to_do_provider.dart';
+import 'package:to_do_list/app/constants/constans.dart';
+import 'package:to_do_list/app/modules/home-screen/providers/home_screen_providers.dart';
+import 'package:to_do_list/app/utils/helpers/precentage.dart';
+import 'package:to_do_list/app/utils/services/models/to_do.dart';
 
 class ProgressCard extends StatelessWidget {
   const ProgressCard({Key? key, this.provider}) : super(key: key);
-  final ToDoProvider? provider;
+  final HomeScreenProvider? provider;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -32,10 +33,7 @@ class ProgressCard extends StatelessWidget {
                 .where((element) => (element.isDone == true))
                 .length;
             final jumlahKeseluruhan = snapshot.data!.length;
-            final presentase = (jumlahBagian / jumlahKeseluruhan) * 100 / 100;
-            final presentaseHasil =
-                presentase.toStringAsFixed(2).toString().split('');
-            presentaseHasil.remove('.');
+
             return Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -47,9 +45,9 @@ class ProgressCard extends StatelessWidget {
                     animation: true,
                     circularStrokeCap: CircularStrokeCap.round,
                     progressColor: Colors.blueAccent,
-                    percent: presentase,
+                    percent: precentage(jumlahKeseluruhan, jumlahBagian),
                     center: Text(
-                      "${int.parse(presentaseHasil.join())}%",
+                      toPresentage(jumlahKeseluruhan, jumlahBagian) + "%",
                       style: defaultFontsStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.blueAccent),
@@ -57,10 +55,6 @@ class ProgressCard extends StatelessWidget {
                     // progressColor: Colors.green,
                   ),
                 ),
-                // const Expanded(
-                //   flex: 1,
-                //   child: SizedBox(),
-                // ),
                 Expanded(
                   flex: 6,
                   child: Column(

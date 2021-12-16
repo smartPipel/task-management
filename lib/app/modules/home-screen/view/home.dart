@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:to_do_list/app/data/constans.dart';
-import 'package:to_do_list/app/data/models/to_do.dart';
+import 'package:to_do_list/app/config/routes/routes.dart';
+import 'package:to_do_list/app/constants/constans.dart';
 import 'package:to_do_list/app/modules/home-screen/components/app_bar_components.dart';
 import 'package:to_do_list/app/modules/home-screen/components/page_title.dart';
 import 'package:to_do_list/app/modules/home-screen/components/progress_card.dart';
 import 'package:to_do_list/app/modules/home-screen/components/to_do_list_components.dart';
 import 'package:to_do_list/app/modules/home-screen/components/to_do_list_title_sections.dart';
-import 'package:to_do_list/app/providers/todo/to_do_provider.dart';
-import 'package:to_do_list/routes/routes.dart';
+import 'package:to_do_list/app/modules/home-screen/providers/home_screen_providers.dart';
+import 'package:to_do_list/app/utils/services/models/to_do.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -29,26 +29,19 @@ class _HomeScreenState extends State<HomeScreen> {
 
   providerDispose() {
     // Your Code
-    Provider.of<ToDoProvider>(context, listen: false).dispose();
+    Provider.of<HomeScreenProvider>(context, listen: false).dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    final _provider = Provider.of<ToDoProvider>(context, listen: false);
+    final _provider = Provider.of<HomeScreenProvider>(context, listen: false);
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: PreferredSize(
           preferredSize: const Size.fromHeight(100),
           child: AppBarComponents(
-            onPressed: () => Navigator.pushNamed(context, Routes.createRoute)
-            // _provider.setTitle('alvin');
-            // _provider.setDescription('desc');
-            // _provider.setIsDone(false);
-            // _provider.setDoneEstimate(DateTime.now());
-            // _provider.setColor(Colors.blueAccent.value.toString());
-            // _provider.saveToDo();
-            ,
+            onPressed: () => Navigator.pushNamed(context, Routes.createRoute),
           ),
         ),
         body: Container(
@@ -82,11 +75,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           physics: const BouncingScrollPhysics(),
                           itemCount: _data.length,
                           itemBuilder: (context, i) {
-                            var todo = Provider.of<ToDoProvider>(context,
-                                listen: false);
-
                             return ToDoListComponents(
-                                data: _data, i: i, todo: todo);
+                                data: _data, i: i, todo: _provider);
                           },
                         );
                       } else {

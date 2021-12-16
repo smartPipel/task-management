@@ -1,7 +1,7 @@
 // ignore_for_file: avoid_print
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:to_do_list/app/data/models/to_do.dart';
+import 'package:to_do_list/app/utils/services/models/to_do.dart';
 
 class FirestoreServices {
   static FirestoreServices instance = FirestoreServices._singleton();
