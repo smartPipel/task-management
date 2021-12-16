@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:to_do_list/app/constants/app_constans.dart';
+import 'package:to_do_list/app/constants/app_constants.dart';
 import 'package:to_do_list/app/modules/home-screen/providers/home_screen_providers.dart';
 
 class ToDoListTitleSections extends StatelessWidget {

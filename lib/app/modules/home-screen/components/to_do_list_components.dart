@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:timelines/timelines.dart';
-import 'package:to_do_list/app/constants/app_constans.dart';
+import 'package:to_do_list/app/constants/app_constants.dart';
 import 'package:to_do_list/app/modules/home-screen/providers/home_screen_providers.dart';
 import 'package:to_do_list/app/utils/helpers/date_time_helper.dart';
 import 'package:to_do_list/app/utils/services/models/to_do.dart';
