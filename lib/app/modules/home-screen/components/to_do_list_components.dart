@@ -43,14 +43,14 @@ class ToDoListComponents extends StatelessWidget {
                     icon: Icons.settings_backup_restore_rounded,
                   )
           ],
-          dismissible: DismissiblePane(
-            onDismissed: () {
-              // print(data[i].createdAt);
+          // dismissible: DismissiblePane(
+          //   onDismissed: () {
+          //     // print(data[i].createdAt);
 
-              ScaffoldMessenger.of(context)
-                  .showSnackBar(const SnackBar(content: Text('dismiss')));
-            },
-          ),
+          //     ScaffoldMessenger.of(context)
+          //         .showSnackBar(const SnackBar(content: Text('dismiss')));
+          //   },
+          // ),
         ),
         child: TimelineTile(
           node: SizedBox(

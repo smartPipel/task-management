@@ -12,3 +12,9 @@ DateTime toDateTime(Timestamp timestamp) {
 String dateHourFormat(DateTime dateTime) {
   return DateFormat.jm().format(dateTime).toString();
 }
+
+String a(n) {
+  String date = DateFormat.H().add_Hm().format(n);
+
+  return date;
+}

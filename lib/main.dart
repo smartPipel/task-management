@@ -29,7 +29,7 @@ void main() async {
     ],
     child: const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'To-Do',
+      title: 'Task Manager',
       initialRoute: Routes.homeRoute,
       onGenerateRoute: RoutesGenerate.genrate,
     ),
