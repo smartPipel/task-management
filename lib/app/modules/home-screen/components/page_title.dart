@@ -6,13 +6,16 @@ class PageTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.only(left: bigSpacing),
-      margin: const EdgeInsets.only(bottom: mainSpacing),
-      width: MediaQuery.of(context).size.width,
-      child: const Text(
-        'Pengelola Tugas',
-        style: TextStyle(fontSize: 30),
+    return SizedBox(
+      width: width(context),
+      child: FittedBox(
+        alignment: Alignment.topLeft,
+        child: Text(
+          'Pengelola Tugas',
+          style: defaultFontsStyle(
+            fontSize: 30,
+          ),
+        ),
       ),
     );
   }

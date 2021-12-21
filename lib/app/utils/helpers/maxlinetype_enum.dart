@@ -1,0 +1,4 @@
+enum MaxLineType {
+  text,
+  input,
+}

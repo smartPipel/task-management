@@ -18,20 +18,22 @@ void main() async {
 
   final _db = FirestoreServices();
 
-  runApp(MultiProvider(
-    providers: [
-      // ChangeNotifierProvider<ToDoProvider>(create: (_) => ToDoProvider()),
-      ChangeNotifierProvider.value(value: HomeScreenProvider()),
-      StreamProvider<List<ToDo>>.value(
-        value: _db.getToDoList(),
-        initialData: const [],
-      )
-    ],
-    child: const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Task Manager',
-      initialRoute: Routes.homeRoute,
-      onGenerateRoute: RoutesGenerate.genrate,
+  runApp(
+    MultiProvider(
+      providers: [
+        // ChangeNotifierProvider<ToDoProvider>(create: (_) => ToDoProvider()),
+        ChangeNotifierProvider.value(value: HomeScreenProvider()),
+        StreamProvider<List<ToDo>>.value(
+          value: _db.getToDoList(),
+          initialData: const [],
+        )
+      ],
+      child: const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Task Manager',
+        initialRoute: Routes.homeRoute,
+        onGenerateRoute: RoutesGenerate.genrate,
+      ),
     ),
-  ));
+  );
 }

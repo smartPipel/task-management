@@ -39,18 +39,33 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(100),
+          preferredSize: const Size.fromHeight(80),
           child: AppBarComponents(
             onPressed: () => Navigator.pushNamed(context, Routes.createRoute),
           ),
         ),
         body: Container(
-          margin: const EdgeInsets.all(24),
+          margin: const EdgeInsets.all(mainSpacing),
           child: Column(
             children: [
-              const Expanded(flex: 2, child: PageTitle()),
-              Expanded(flex: 3, child: ProgressCard(provider: _provider)),
-              const Expanded(flex: 2, child: ToDoListTitleSections()),
+              SizedBox(
+                height: height(context) * .06,
+                child: const PageTitle(),
+              ),
+              const SizedBox(
+                height: mainSpacing,
+              ),
+              SizedBox(
+                height: height(context) * .16,
+                child: ProgressCard(provider: _provider),
+              ),
+              const SizedBox(
+                height: smallSpacing,
+              ),
+              const SizedBox(height: 50, child: ToDoListTitleSections()),
+              const SizedBox(
+                height: smallSpacing,
+              ),
               Expanded(
                 flex: 15,
                 child: StreamBuilder<List<ToDo>>(

@@ -3,6 +3,8 @@ import 'package:calendar_timeline/calendar_timeline.dart';
 import 'package:flutter/material.dart';
 import 'package:to_do_list/app/constants/app_constants.dart';
 import 'package:to_do_list/app/constants/calendar_constants.dart';
+import 'package:to_do_list/app/modules/create-to-do/components/text_field_conponents.dart';
+import 'package:to_do_list/app/utils/helpers/maxlinetype_enum.dart';
 import 'package:to_do_list/app/widget/calendar/hour_list_widget.dart';
 
 class CreateToDo extends StatefulWidget {
@@ -17,6 +19,8 @@ class _CreateToDoState extends State<CreateToDo> {
   int selectedIndex = 0;
   final _scrollContoller = ScrollController();
   final _listViewScrollControler = ScrollController();
+  final _titleController = TextEditingController();
+  final _descriptionController = TextEditingController();
 
   @override
   void dispose() {
@@ -79,10 +83,16 @@ class _CreateToDoState extends State<CreateToDo> {
                         color: Colors.white,
                         child: Column(
                           children: [
-                            makeInput(
-                                label: 'Judul', lineType: MaxLineType.input),
-                            makeInput(
-                                label: 'Deskripsi', lineType: MaxLineType.text),
+                            TextFieldComponents(
+                              controller: _titleController,
+                              label: 'Judul',
+                              lineType: MaxLineType.input,
+                            ),
+                            TextFieldComponents(
+                              controller: _descriptionController,
+                              label: 'Deskripsi',
+                              lineType: MaxLineType.text,
+                            ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -116,7 +126,6 @@ class _CreateToDoState extends State<CreateToDo> {
                                   activeDayColor: Colors.white,
                                   activeBackgroundDayColor: Colors.pink,
                                   dotsColor: Colors.white,
-                                  // selectableDayPredicate: (date) => date.day != 23,
                                   locale: 'id',
                                 ),
                               ],
@@ -213,50 +222,4 @@ class _CreateToDoState extends State<CreateToDo> {
       ),
     );
   }
-
-  Widget makeInput({label, obsureText = false, MaxLineType? lineType}) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          label,
-          style: defaultFontsStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
-              color: Colors.blueAccent),
-        ),
-        const SizedBox(
-          height: mainSpacing,
-        ),
-        TextField(
-          maxLines: lineType == MaxLineType.text ? 3 : 1,
-          obscureText: obsureText,
-          decoration: InputDecoration(
-            contentPadding:
-                const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-            enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(borderRadius),
-              borderSide: const BorderSide(
-                color: Colors.grey,
-              ),
-            ),
-            border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(borderRadius),
-                borderSide: BorderSide(color: Colors.grey[400]!)),
-            focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(borderRadius),
-                borderSide: const BorderSide(color: Colors.blueAccent)),
-          ),
-        ),
-        const SizedBox(
-          height: mainSpacing,
-        )
-      ],
-    );
-  }
-}
-
-enum MaxLineType {
-  text,
-  input,
 }
