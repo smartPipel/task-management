@@ -62,7 +62,10 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(
                 height: smallSpacing,
               ),
-              const SizedBox(height: 50, child: ToDoListTitleSections()),
+              const SizedBox(
+                height: 50,
+                child: ToDoListTitleSections(),
+              ),
               const SizedBox(
                 height: smallSpacing,
               ),
@@ -75,16 +78,19 @@ class _HomeScreenState extends State<HomeScreen> {
 
                     if (snapshot.connectionState == ConnectionState.waiting) {
                       return const Center(
-                          child: SizedBox(
-                              width: 50,
-                              height: 50,
-                              child: CircularProgressIndicator()));
+                        child: SizedBox(
+                          width: 50,
+                          height: 50,
+                          child: CircularProgressIndicator(),
+                        ),
+                      );
                     } else {
                       if (_data!.isNotEmpty) {
-                        WidgetsBinding.instance!
-                            .addPostFrameCallback((timeStamp) {
-                          _provider.setToDoLength(_data.length.toString());
-                        });
+                        WidgetsBinding.instance!.addPostFrameCallback(
+                          (timeStamp) {
+                            _provider.setToDoLength(_data.length.toString());
+                          },
+                        );
                         return ListView.builder(
                           controller: _scrollController,
                           physics: const BouncingScrollPhysics(),
@@ -96,31 +102,32 @@ class _HomeScreenState extends State<HomeScreen> {
                         );
                       } else {
                         return SizedBox(
-                            width: width(context),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Expanded(
-                                  flex: 10,
-                                  child: SizedBox(
-                                    height: 200,
-                                    width: 200,
-                                    child: Image.asset(illustrationAssets +
-                                        'tidak-ada-tugas.png'),
-                                  ),
+                          width: width(context),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Expanded(
+                                flex: 10,
+                                child: SizedBox(
+                                  height: 200,
+                                  width: 200,
+                                  child: Image.asset(illustrationAssets +
+                                      'tidak-ada-tugas.png'),
                                 ),
-                                const Spacer(
-                                  flex: 1,
+                              ),
+                              const Spacer(
+                                flex: 1,
+                              ),
+                              Expanded(
+                                flex: 4,
+                                child: Text(
+                                  'Tidak ada tugas',
+                                  style: defaultFontsStyle(fontSize: 16),
                                 ),
-                                Expanded(
-                                  flex: 4,
-                                  child: Text(
-                                    'Tidak ada tugas',
-                                    style: defaultFontsStyle(fontSize: 16),
-                                  ),
-                                ),
-                              ],
-                            ));
+                              ),
+                            ],
+                          ),
+                        );
                       }
                     }
                   },

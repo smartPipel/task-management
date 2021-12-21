@@ -48,11 +48,13 @@ class TextFieldComponents extends StatelessWidget {
               ),
             ),
             border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(borderRadius),
-                borderSide: BorderSide(color: Colors.grey[400]!)),
+              borderRadius: BorderRadius.circular(borderRadius),
+              borderSide: BorderSide(color: Colors.grey[400]!),
+            ),
             focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(borderRadius),
-                borderSide: const BorderSide(color: Colors.blueAccent)),
+              borderRadius: BorderRadius.circular(borderRadius),
+              borderSide: const BorderSide(color: Colors.blueAccent),
+            ),
           ),
         ),
         const SizedBox(
