@@ -16,7 +16,9 @@ class CreateToDo extends StatefulWidget {
 
 class _CreateToDoState extends State<CreateToDo> {
   DateTime dateNow = DateTime.now();
+  late DateTime dateEstimate;
   int selectedIndex = 0;
+  int selectedPeriodIndex = 0;
   final _scrollContoller = ScrollController();
   final _listViewScrollControler = ScrollController();
   final _titleController = TextEditingController();
@@ -114,10 +116,9 @@ class _CreateToDoState extends State<CreateToDo> {
                                       dateNow.month + 1, dateNow.day),
                                   onDateSelected: (date) {
                                     if (date != null) {
-                                      date.toLocal();
-                                      date = DateTime(date.year, date.month,
-                                          date.day, dateNow.hour);
-                                      print(date.hour);
+                                      // date.toLocal();
+                                      dateEstimate = date;
+                                      print(dateEstimate.day);
                                     }
                                   },
                                   leftMargin: smallSpacing,
@@ -147,53 +148,113 @@ class _CreateToDoState extends State<CreateToDo> {
                       const SizedBox(
                         height: mainSpacing,
                       ),
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(borderRadius),
-                          color: Colors.white,
-                          // border: Border.all(color: Colors.black, width: .5),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.shade200,
-                              blurRadius: 20,
-                              offset: const Offset(0, 0),
-                              spreadRadius: 10,
+                      Row(
+                        children: [
+                          Expanded(
+                            flex: 6,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius:
+                                    BorderRadius.circular(borderRadius),
+                                color: Colors.white,
+                                // border: Border.all(color: Colors.black, width: .5),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.shade200,
+                                    blurRadius: 20,
+                                    offset: const Offset(0, 0),
+                                    spreadRadius: 10,
+                                  ),
+                                ],
+                              ),
+                              margin: const EdgeInsets.all(smallSpacing),
+                              padding: const EdgeInsets.all(smallSpacing),
+                              height: 80,
+                              width: width(context),
+                              child: ListView.builder(
+                                scrollDirection: Axis.horizontal,
+                                controller: _listViewScrollControler,
+                                physics: const BouncingScrollPhysics(),
+                                itemCount: jam.length,
+                                itemBuilder: (context, index) {
+                                  return HourListWidget(
+                                    title: jam.map((e) => e).toList()[index],
+                                    onTap: () {
+                                      setState(() {
+                                        selectedIndex = index;
+                                      });
+                                      print(selectedIndex);
+                                    },
+                                    titleColor: selectedIndex == index
+                                        ? Colors.white
+                                        : Colors.black,
+                                    selectedColor: selectedIndex == index
+                                        ? Colors.pink
+                                        : Colors.white,
+                                  );
+                                },
+                              ),
                             ),
-                          ],
-                        ),
-                        margin: const EdgeInsets.all(smallSpacing),
-                        padding: const EdgeInsets.all(smallSpacing),
-                        height: 80,
-                        width: width(context),
-                        child: ListView.builder(
-                          scrollDirection: Axis.horizontal,
-                          controller: _listViewScrollControler,
-                          physics: const BouncingScrollPhysics(),
-                          itemCount: jam.length,
-                          itemBuilder: (context, index) {
-                            return HourListWidget(
-                              title: jam.map((e) => e).toList()[index],
-                              onTap: () {
-                                setState(() {
-                                  selectedIndex = index;
-                                });
-                                print(selectedIndex);
-                              },
-                              titleColor: selectedIndex == index
-                                  ? Colors.white
-                                  : Colors.black,
-                              selectedColor: selectedIndex == index
-                                  ? Colors.pink
-                                  : Colors.white,
-                            );
-                          },
-                        ),
+                          ),
+                          Expanded(
+                            flex: 2,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius:
+                                    BorderRadius.circular(borderRadius),
+                                color: Colors.white,
+                                // border: Border.all(color: Colors.black, width: .5),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.shade200,
+                                    blurRadius: 20,
+                                    offset: const Offset(0, 0),
+                                    spreadRadius: 10,
+                                  ),
+                                ],
+                              ),
+                              margin: const EdgeInsets.all(smallSpacing),
+                              padding: const EdgeInsets.all(smallSpacing),
+                              height: 80,
+                              child: ListView.builder(
+                                physics: const BouncingScrollPhysics(),
+                                itemCount: period.length,
+                                itemBuilder: (context, i) {
+                                  return HourListWidget(
+                                    title: period.map((e) => e).toList()[i],
+                                    onTap: () {
+                                      setState(() {
+                                        selectedPeriodIndex = i;
+                                      });
+                                      print(selectedPeriodIndex);
+                                    },
+                                    titleColor: selectedPeriodIndex == i
+                                        ? Colors.white
+                                        : Colors.black,
+                                    selectedColor: selectedPeriodIndex == i
+                                        ? Colors.pink
+                                        : Colors.white,
+                                  );
+                                },
+                              ),
+                            ),
+                          )
+                        ],
                       ),
                       const SizedBox(
                         height: mainSpacing * 4,
                       ),
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          print(_titleController.text.trim());
+                          print(_descriptionController.text.trim());
+                          print(dateNow.day);
+                          print(dateEstimate.day);
+                          print(jam.map((e) => e).toList()[selectedIndex]);
+                          print(period
+                              .map((e) => e)
+                              .toList()[selectedPeriodIndex]);
+                        },
                         child: Container(
                           padding: const EdgeInsets.all(bigSpacing),
                           decoration: BoxDecoration(

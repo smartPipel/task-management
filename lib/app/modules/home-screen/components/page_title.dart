@@ -13,6 +13,7 @@ class PageTitle extends StatelessWidget {
         child: Text(
           'Pengelola Tugas',
           style: defaultFontsStyle(
+            fontWeight: FontWeight.w600,
             fontSize: 30,
           ),
         ),
