@@ -36,6 +36,9 @@ class TextFieldComponents extends StatelessWidget {
           onSubmitted: (value) {
             controller.text = value;
           },
+          onChanged: (value) {
+            controller.text = value;
+          },
           maxLines: lineType == MaxLineType.text ? 3 : 1,
           obscureText: obsureText ?? false,
           decoration: InputDecoration(

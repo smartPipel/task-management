@@ -76,7 +76,27 @@ class ToDoListComponents extends StatelessWidget {
                 color: Color(int.parse(data[i].color)),
                 borderRadius: BorderRadius.circular(15)),
             child: ListTile(
-              title: Text(data[i].title),
+              title: Text(
+                data[i].title,
+                style: defaultFontsStyle(
+                  fontWeight: FontWeight.w600,
+                  fontSize: 16,
+                  color:
+                      data[i].color == Colors.yellow.shade700.value.toString()
+                          ? Colors.black
+                          : Colors.white,
+                ),
+              ),
+              subtitle: Text(
+                data[i].description,
+                style: defaultFontsStyle(
+                  fontSize: 14,
+                  color:
+                      data[i].color == Colors.yellow.shade700.value.toString()
+                          ? Colors.black54
+                          : Colors.white54,
+                ),
+              ),
             ),
           ),
         ),

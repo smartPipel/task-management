@@ -67,26 +67,6 @@ class HomeScreenProvider with ChangeNotifier {
     _doneEstimate = toDo.doneEstimate;
   }
 
-  void saveToDo() {
-    var _toDo = ToDo(
-      color: _color!,
-      id: FirebaseFirestore.instance
-          .collection('data_collections')
-          .doc()
-          .collection('ObNh7bwCs8r43qJK2jci')
-          .doc()
-          .id,
-      title: getTitle,
-      description: getDescription,
-      isDone: getIsDone,
-      createdAt: getCreatedAt,
-      doneEstimate: getDoneEstimate,
-    );
-
-    _db.createToDo(_toDo);
-    print(_toDo.createdAt.toString());
-  }
-
   void deleteToDo(String id) {
     _db.removeToDo(id);
   }

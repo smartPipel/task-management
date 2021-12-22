@@ -18,7 +18,8 @@ class FirestoreServices {
   Stream<List<ToDo>> getToDoList() {
     final stream = _collectionReference
         .doc('ObNh7bwCs8r43qJK2jci')
-        .collection('to-do')
+        .collection("to-do")
+        .orderBy("createdAt", descending: false)
         .snapshots();
 
     return stream
