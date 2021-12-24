@@ -6,8 +6,8 @@ import 'package:to_do_list/app/modules/home-screen/providers/home_screen_provide
 import 'package:to_do_list/app/utils/helpers/date_time_helper.dart';
 import 'package:to_do_list/app/utils/services/models/to_do.dart';
 
-class ToDoListComponents extends StatelessWidget {
-  const ToDoListComponents(
+class TaskListComponents extends StatelessWidget {
+  const TaskListComponents(
       {Key? key, required this.data, required this.i, required this.todo})
       : super(key: key);
   final HomeScreenProvider? todo;

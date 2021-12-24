@@ -15,20 +15,21 @@ class FirestoreServices {
     return instance;
   }
 
-  Stream<List<ToDo>> getToDoList() {
+  Stream<List<ToDo>> getToDoList(String uid) {
     final stream = _collectionReference
-        .doc('ObNh7bwCs8r43qJK2jci')
+        .doc(uid)
         .collection("to-do")
         .orderBy("createdAt", descending: false)
+        // .orderBy('isDone', descending: true)
         .snapshots();
 
     return stream
         .map((list) => list.docs.map((e) => ToDo.fromFirestore(e)).toList());
   }
 
-  Future<void> createToDo(ToDo todo) async {
+  Future<void> createToDo(String uid, ToDo todo) async {
     return await _collectionReference
-        .doc('ObNh7bwCs8r43qJK2jci')
+        .doc(uid)
         .collection('to-do')
         .doc()
         .set(todo.createMap())
@@ -42,19 +43,20 @@ class FirestoreServices {
         );
   }
 
-  Future removeToDo(String id) async {
-    await _collectionReference
-        .doc('ObNh7bwCs8r43qJK2jci')
+  void removeYesterdayTask(String uid) {
+    _collectionReference
+        .doc(uid)
         .collection('to-do')
-        .doc(id)
-        .delete();
+        .where('doneEstimate', isLessThan: Timestamp.fromDate(DateTime.now()));
   }
 
-  Future<void> setDone(String id, bool done) async {
-    DocumentReference documentReference = _collectionReference
-        .doc('ObNh7bwCs8r43qJK2jci')
-        .collection('to-do')
-        .doc(id);
+  Future removeToDo(String uid, String id) async {
+    await _collectionReference.doc(uid).collection('to-do').doc(id).delete();
+  }
+
+  Future<void> setDone(String uid, String id, bool done) async {
+    DocumentReference documentReference =
+        _collectionReference.doc(uid).collection('to-do').doc(id);
     return await firestore.runTransaction((transaction) async {
       DocumentSnapshot snapshot = await transaction.get(documentReference);
 
@@ -68,9 +70,9 @@ class FirestoreServices {
     });
   }
 
-  Stream getIsDoneLength(bool done) {
+  Stream getIsDoneLength(String uid, bool done) {
     return _collectionReference
-        .doc('ObNh7bwCs8r43qJK2jci')
+        .doc(uid)
         .collection('to-do')
         .where('isDone', isEqualTo: done == true ? true : false)
         .snapshots();

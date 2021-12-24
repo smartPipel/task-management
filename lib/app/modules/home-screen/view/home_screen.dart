@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:to_do_list/app/config/routes/routes.dart';
@@ -5,8 +6,8 @@ import 'package:to_do_list/app/constants/app_constants.dart';
 import 'package:to_do_list/app/modules/home-screen/components/app_bar_components.dart';
 import 'package:to_do_list/app/modules/home-screen/components/page_title.dart';
 import 'package:to_do_list/app/modules/home-screen/components/progress_card.dart';
-import 'package:to_do_list/app/modules/home-screen/components/to_do_list_components.dart';
-import 'package:to_do_list/app/modules/home-screen/components/to_do_list_title_sections.dart';
+import 'package:to_do_list/app/modules/home-screen/components/task_list_components.dart';
+import 'package:to_do_list/app/modules/home-screen/components/task_title_sections.dart';
 import 'package:to_do_list/app/modules/home-screen/providers/home_screen_providers.dart';
 import 'package:to_do_list/app/utils/services/models/to_do.dart';
 
@@ -18,18 +19,13 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  final user = FirebaseAuth.instance.currentUser;
   final _scrollController = ScrollController();
 
   @override
   void dispose() {
     _scrollController.dispose();
-    providerDispose();
     super.dispose();
-  }
-
-  providerDispose() {
-    // Your Code
-    Provider.of<HomeScreenProvider>(context, listen: false).dispose();
   }
 
   @override
@@ -66,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               const SizedBox(
                 height: 50,
-                child: ToDoListTitleSections(),
+                child: TaskTitleSections(),
               ),
               const SizedBox(
                 height: smallSpacing,
@@ -98,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           physics: const BouncingScrollPhysics(),
                           itemCount: _data.length,
                           itemBuilder: (context, i) {
-                            return ToDoListComponents(
+                            return TaskListComponents(
                                 data: _data, i: i, todo: _provider);
                           },
                         );

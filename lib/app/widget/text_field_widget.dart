@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:to_do_list/app/constants/app_constants.dart';
 import 'package:to_do_list/app/utils/helpers/maxlinetype_enum.dart';
 
-class TextFieldComponents extends StatelessWidget {
-  const TextFieldComponents({
+class TextFieldWidget extends StatelessWidget {
+  const TextFieldWidget({
     Key? key,
+    this.readOnly,
     this.label,
-    this.obsureText,
+    this.obsureText = false,
+    this.onTap,
     required this.controller,
     required this.lineType,
   }) : super(key: key);
@@ -15,6 +17,8 @@ class TextFieldComponents extends StatelessWidget {
   final bool? obsureText;
   final MaxLineType lineType;
   final TextEditingController controller;
+  final Function? onTap;
+  final bool? readOnly;
 
   @override
   Widget build(BuildContext context) {
@@ -31,19 +35,37 @@ class TextFieldComponents extends StatelessWidget {
         const SizedBox(
           height: mainSpacing,
         ),
-        TextField(
+        TextFormField(
+          onTap: () => onTap!.call(),
           controller: controller,
-          onSubmitted: (value) {
-            controller.text = value;
+          validator: (value) {
+            if (value!.isEmpty) {
+              return '$label tidak boleh kosong';
+            }
+            if (obsureText == false) {
+              if (value.contains('_')) {
+                return '$label tidak boleh menggunakan underscore "_"';
+              }
+            }
+            if (value.length <= 2) {
+              return '$label harus lebih banyak dari dua huruf';
+            }
+
+            return null;
           },
-          onChanged: (value) {
+          onFieldSubmitted: (value) {
             controller.text = value;
+            // .splitMapJoin((value.characters.first),
+            //     onMatch: (m) => m[0]!.toUpperCase().toString(),
+            //     onNonMatch: (m) => m[0].toUpperCase());
           },
+          style: defaultFontsStyle(),
+          readOnly: readOnly ?? false,
           maxLines: lineType == MaxLineType.text ? 3 : 1,
           obscureText: obsureText ?? false,
           decoration: InputDecoration(
             contentPadding:
-                const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(borderRadius),
               borderSide: const BorderSide(

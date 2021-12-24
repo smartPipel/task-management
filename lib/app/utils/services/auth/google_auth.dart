@@ -1,6 +1,7 @@
 // ignore_for_file: avoid_print
 
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/services.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class GoogleAuth {
@@ -15,7 +16,7 @@ class GoogleAuth {
     return instance;
   }
 
-  void signInWithGoogle() async {
+  Future<UserCredential> signInWithGoogle() async {
     try {
       final GoogleSignInAccount? googleSignInAccount =
           await googleSignIn.signIn();
@@ -27,8 +28,11 @@ class GoogleAuth {
         idToken: authentication.idToken,
       );
 
-      await auth.signInWithCredential(authCredential);
-    } on FirebaseAuthException catch (e) {
+      return await auth.signInWithCredential(authCredential);
+    } on FirebaseAuthException catch (e, stackTrace) {
+      print('Error: ${e.message}, Stacktrace: $stackTrace');
+      rethrow;
+    } on PlatformException catch (e) {
       print(e.message);
       rethrow;
     }
