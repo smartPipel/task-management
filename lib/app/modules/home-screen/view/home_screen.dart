@@ -9,10 +9,13 @@ import 'package:to_do_list/app/modules/home-screen/components/progress_card.dart
 import 'package:to_do_list/app/modules/home-screen/components/task_list_components.dart';
 import 'package:to_do_list/app/modules/home-screen/components/task_title_sections.dart';
 import 'package:to_do_list/app/modules/home-screen/providers/home_screen_providers.dart';
+import 'package:to_do_list/app/modules/initialize-screen/providers/check_connection_provider.dart';
 import 'package:to_do_list/app/utils/services/models/to_do.dart';
+import 'package:to_do_list/app/widget/show_connection_dialog_widget.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({Key? key, this.connectionProvider}) : super(key: key);
+  final CheckConnectionProvider? connectionProvider;
 
   @override
   _HomeScreenState createState() => _HomeScreenState();

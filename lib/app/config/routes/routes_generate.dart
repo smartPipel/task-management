@@ -9,8 +9,6 @@ part 'routes_list.dart';
 class RoutesGenerate {
   static Route<dynamic> genrate(RouteSettings settings) {
     switch (settings.name) {
-      case Routes.initialRoute:
-        return MaterialPageRoute(builder: (_) => const InitializeScreen());
       case Routes.loginRoute:
         return MaterialPageRoute(builder: (_) => const LoginScreen());
       case Routes.homeRoute:

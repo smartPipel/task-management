@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:to_do_list/app/utils/helpers/date_time_helper.dart';
 import 'package:to_do_list/app/utils/services/auth/google_auth.dart';
 import 'package:to_do_list/app/utils/services/firestore/firestore_services.dart';
-import 'package:to_do_list/app/utils/services/models/to_do.dart';
 
 class HomeScreenProvider with ChangeNotifier {
   final _db = FirestoreServices();
@@ -22,6 +21,7 @@ class HomeScreenProvider with ChangeNotifier {
   final Timestamp _createdAt = Timestamp.now();
   Timestamp? _doneEstimate;
   String? _length = '0';
+  String? _connection;
 
   String get getId => _id!;
   String get getTitle => _title!;
@@ -31,9 +31,14 @@ class HomeScreenProvider with ChangeNotifier {
   Timestamp get getDoneEstimate => _doneEstimate!;
   String get getColor => _color!;
   String get getToDoLength => _length!.isEmpty ? '0' : _length!;
-
+  get getConnection => _connection ?? 'true';
   void setToDoLength(String length) {
     _length = length;
+    notifyListeners();
+  }
+
+  void setConnection(String connection) {
+    _connection = connection;
     notifyListeners();
   }
 

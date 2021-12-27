@@ -1,14 +1,17 @@
+// ignore_for_file: avoid_print
+
 import 'package:calendar_timeline/calendar_timeline.dart';
 import 'package:flutter/material.dart';
 import 'package:to_do_list/app/constants/app_constants.dart';
 import 'package:to_do_list/app/modules/create-task/providers/create_task_screen_provider.dart';
 
 class ChooseDateComponent extends StatelessWidget {
-  ChooseDateComponent({Key? key, required this.dateNow, required this.provider})
+  const ChooseDateComponent(
+      {Key? key, required this.dateNow, required this.provider})
       : super(key: key);
   final DateTime dateNow;
 
-  CreateTaskScreenProvider provider;
+  final CreateTaskScreenProvider provider;
 
   @override
   Widget build(BuildContext context) {

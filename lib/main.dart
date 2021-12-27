@@ -6,10 +6,10 @@ import 'package:provider/provider.dart';
 import 'package:to_do_list/app/config/routes/routes.dart';
 import 'package:to_do_list/app/modules/create-task/providers/create_task_screen_provider.dart';
 import 'package:to_do_list/app/modules/home-screen/providers/home_screen_providers.dart';
+import 'package:to_do_list/app/modules/initialize-screen/providers/check_connection_provider.dart';
+import 'package:to_do_list/app/modules/initialize-screen/view/initial.dart';
 import 'package:to_do_list/app/modules/login-screen/providers/login_screen_provider.dart';
 import 'package:to_do_list/app/modules/login-screen/view/login_screen.dart';
-import 'package:to_do_list/app/utils/services/firestore/firestore_services.dart';
-import 'package:to_do_list/app/utils/services/models/to_do.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,7 +20,7 @@ void main() async {
     print(e.toString());
   }
 
-  final _user = FirebaseAuth.instance.currentUser;
+  // final _user = FirebaseAuth.instance;
 
   runApp(
     MultiProvider(
@@ -31,15 +31,18 @@ void main() async {
             create: (_) => HomeScreenProvider()),
         ChangeNotifierProvider<CreateTaskScreenProvider>(
             create: (_) => CreateTaskScreenProvider()),
-        // StreamProvider<List<ToDo>>.value(
-        //   value: _user != null ? _db.getToDoList(_user.uid) : list,
-        //   initialData: const [],
-        // )
+        ChangeNotifierProvider<CheckConnectionProvider>(
+          create: (_) {
+            CheckConnectionProvider _check = CheckConnectionProvider();
+            _check.initialLoad();
+            return _check;
+          },
+        )
       ],
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Task Manager',
-        initialRoute: Routes.initialRoute,
+        home: InitializeScreen(),
         onGenerateRoute: RoutesGenerate.genrate,
       ),
     ),
