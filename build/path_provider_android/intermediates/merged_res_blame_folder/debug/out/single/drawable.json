@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/smartpipel/FlutterProject/to_do_list/build/path_provider_android/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/home/smartpipel/.gradle/caches/transforms-2/files-2.1/db11aab57f7cc8d0296c43256cc67133/core-1.6.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/home/smartpipel/FlutterProject/to_do_list/build/path_provider_android/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
+        "source": "/home/smartpipel/.gradle/caches/transforms-2/files-2.1/db11aab57f7cc8d0296c43256cc67133/core-1.6.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/home/smartpipel/FlutterProject/to_do_list/build/path_provider_android/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/home/smartpipel/.gradle/caches/transforms-2/files-2.1/db11aab57f7cc8d0296c43256cc67133/core-1.6.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/home/smartpipel/FlutterProject/to_do_list/build/path_provider_android/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/home/smartpipel/.gradle/caches/transforms-2/files-2.1/db11aab57f7cc8d0296c43256cc67133/core-1.6.0/res/drawable/notification_bg_low.xml"
+    }
+]

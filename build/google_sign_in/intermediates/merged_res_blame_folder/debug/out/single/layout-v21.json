@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/smartpipel/FlutterProject/to_do_list/build/google_sign_in/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/smartpipel/.gradle/caches/transforms-2/files-2.1/db11aab57f7cc8d0296c43256cc67133/core-1.6.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/smartpipel/FlutterProject/to_do_list/build/google_sign_in/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/smartpipel/.gradle/caches/transforms-2/files-2.1/db11aab57f7cc8d0296c43256cc67133/core-1.6.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/smartpipel/FlutterProject/to_do_list/build/google_sign_in/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/home/smartpipel/.gradle/caches/transforms-2/files-2.1/db11aab57f7cc8d0296c43256cc67133/core-1.6.0/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/smartpipel/FlutterProject/to_do_list/build/google_sign_in/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/smartpipel/.gradle/caches/transforms-2/files-2.1/db11aab57f7cc8d0296c43256cc67133/core-1.6.0/res/layout-v21/notification_template_icon_group.xml"
+    }
+]

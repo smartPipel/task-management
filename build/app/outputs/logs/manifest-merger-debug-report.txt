@@ -1,0 +1,563 @@
+-- Merging decision tree log ---
+application
+INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml:3:4-34:19
+MERGED from [:firebase_auth] /home/smartpipel/FlutterProject/to_do_list/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] /home/smartpipel/FlutterProject/to_do_list/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /home/smartpipel/FlutterProject/to_do_list/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /home/smartpipel/FlutterProject/to_do_list/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /home/smartpipel/FlutterProject/to_do_list/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /home/smartpipel/FlutterProject/to_do_list/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.firebase:firebase-analytics-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e74ea39fc4f2953aa039721958a27639/jetified-firebase-analytics-ktx-20.0.0/AndroidManifest.xml:7:5-15:19
+MERGED from [com.google.firebase:firebase-analytics-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e74ea39fc4f2953aa039721958a27639/jetified-firebase-analytics-ktx-20.0.0/AndroidManifest.xml:7:5-15:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/efdec004161c0ef706d8ec293e62acc1/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/efdec004161c0ef706d8ec293e62acc1/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.firebase:firebase-analytics:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b2319a40aaafde11d0275e597f8ee22b/jetified-firebase-analytics-20.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b2319a40aaafde11d0275e597f8ee22b/jetified-firebase-analytics-20.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:26:5-81:19
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:26:5-81:19
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04d9739ccb7ccbdaf03e402a3f47159c/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04d9739ccb7ccbdaf03e402a3f47159c/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/bce616f231b570cdf28547b2dc639506/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/bce616f231b570cdf28547b2dc639506/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/0bf9fc2d592a0170bc569c54d12b471c/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:24:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/0bf9fc2d592a0170bc569c54d12b471c/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5ad2b4bdbf2416964b1966de4bd54e60/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5ad2b4bdbf2416964b1966de4bd54e60/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b646a1c3488e0fa90dc6654323ab235e/jetified-firebase-installations-17.0.0/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b646a1c3488e0fa90dc6654323ab235e/jetified-firebase-installations-17.0.0/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/41f8f2bbffac253ca50fce0d711a5034/jetified-play-services-auth-16.0.1/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/41f8f2bbffac253ca50fce0d711a5034/jetified-play-services-auth-16.0.1/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/6ff8bf50d7a56e469e79c64e7f2f4572/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/6ff8bf50d7a56e469e79c64e7f2f4572/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/f58498a3641a0b4078db8eb0d24ddce5/jetified-play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/f58498a3641a0b4078db8eb0d24ddce5/jetified-play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04a238a7c17235c75ca5016a61bbb90e/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04a238a7c17235c75ca5016a61bbb90e/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5d4c4841e85ea0afca8c64ab9ceef939/jetified-play-services-measurement-sdk-20.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5d4c4841e85ea0afca8c64ab9ceef939/jetified-play-services-measurement-sdk-20.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/678a1c7e564e226554b957d864c505c2/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/678a1c7e564e226554b957d864c505c2/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e37032e4884bb0ef565745c445d33ad8/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e37032e4884bb0ef565745c445d33ad8/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/f6a035b7a02376db2de86bdb22cedf12/jetified-play-services-measurement-base-20.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/f6a035b7a02376db2de86bdb22cedf12/jetified-play-services-measurement-base-20.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/72edf14769820a07c5040b9524c73bf5/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/72edf14769820a07c5040b9524c73bf5/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e16ae6648c3ce0fa167d94500d7d136a/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e16ae6648c3ce0fa167d94500d7d136a/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/4584bedaeba54923154b70564fc3a0fd/jetified-play-services-basement-17.1.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/4584bedaeba54923154b70564fc3a0fd/jetified-play-services-basement-17.1.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.6.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/db11aab57f7cc8d0296c43256cc67133/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/db11aab57f7cc8d0296c43256cc67133/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/bb88347195fdc2b62232bb52aa4c9187/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/bb88347195fdc2b62232bb52aa4c9187/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/db11aab57f7cc8d0296c43256cc67133/core-1.6.0/AndroidManifest.xml:24:18-86
+	android:name
+		INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml
+manifest
+ADDED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml:1:1-35:12
+MERGED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml:1:1-35:12
+MERGED from [:firebase_auth] /home/smartpipel/FlutterProject/to_do_list/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:cloud_firestore] /home/smartpipel/FlutterProject/to_do_list/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_core] /home/smartpipel/FlutterProject/to_do_list/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:path_provider_android] /home/smartpipel/FlutterProject/to_do_list/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:google_sign_in] /home/smartpipel/FlutterProject/to_do_list/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:connectivity_plus] /home/smartpipel/FlutterProject/to_do_list/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.multidex:multidex:2.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/7797f22e2d0cbaf8e622f3c20da3b55a/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-analytics-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e74ea39fc4f2953aa039721958a27639/jetified-firebase-analytics-ktx-20.0.0/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.firebase:firebase-common-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/efdec004161c0ef706d8ec293e62acc1/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:2:1-21:12
+MERGED from [com.google.firebase:firebase-analytics:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b2319a40aaafde11d0275e597f8ee22b/jetified-firebase-analytics-20.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:17:1-83:12
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04d9739ccb7ccbdaf03e402a3f47159c/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/bce616f231b570cdf28547b2dc639506/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/0bf9fc2d592a0170bc569c54d12b471c/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:15:1-26:12
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5ad2b4bdbf2416964b1966de4bd54e60/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b646a1c3488e0fa90dc6654323ab235e/jetified-firebase-installations-17.0.0/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:15:1-40:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b26f3222371201c405a1d76c84ec5bb2/jetified-firebase-components-17.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/41f8f2bbffac253ca50fce0d711a5034/jetified-play-services-auth-16.0.1/AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/96d69566b844cef1d9ae3b5e0f9774a2/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/6ff8bf50d7a56e469e79c64e7f2f4572/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/4917d5905a62a2ef1addd59545e9ff67/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/453d2af98012e860dfc2db3e562e1e16/jetified-firebase-database-collection-18.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/f58498a3641a0b4078db8eb0d24ddce5/jetified-play-services-base-17.1.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/50c1950e6a111b432f23877c07c740f3/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04a238a7c17235c75ca5016a61bbb90e/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5d4c4841e85ea0afca8c64ab9ceef939/jetified-play-services-measurement-sdk-20.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/678a1c7e564e226554b957d864c505c2/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e37032e4884bb0ef565745c445d33ad8/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/7f91de8b990f8d3199aae3bbd913b939/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/f6a035b7a02376db2de86bdb22cedf12/jetified-play-services-measurement-base-20.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/72edf14769820a07c5040b9524c73bf5/jetified-play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e16ae6648c3ce0fa167d94500d7d136a/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/4584bedaeba54923154b70564fc3a0fd/jetified-play-services-basement-17.1.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/286d132ad719554038e6e03c680fba42/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.browser:browser:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/acbabc431e49d18202dfd3bd305271c4/browser-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/36c1578aef3c28feb905b2582a286255/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/47611c01de4bf4499950c3c65148e1c1/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/a0ea217fd0c59b890be7c34e778233fa/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/ac741a76b899b06a665aed6d184f834b/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/efb52f2240c39df73633660a06682c6a/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/fa3e16891ddce04251a93a836b74519f/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/085c7b6c79ae366c8fd7289b0d4b496a/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/41145e8e0ffb6bd164315122ebbefdd7/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/9d8d59ea6112211fdb36ea451010cee2/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/4b745bdda1828b0401d257603b130f46/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/3208ba5dfedba1b7ed2b8b2b0c63ee1b/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.6.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/db11aab57f7cc8d0296c43256cc67133/core-1.6.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/6b3c789fb6dda81b1cca36057d6348fd/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e4213cb94a720614f04621b2b3aaa2c7/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/67cf8845dd8b23d7cef0c0a7068b00e1/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/a8939e8936a34fc59a49269c030d9b1e/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/603fb5128502bc6b9dd8c2456ea7f2f7/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/30ac6fe13978c8c1b8905769a0d89150/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/7544ea2e3a4b8326e597dc1974b3ee50/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/bb88347195fdc2b62232bb52aa4c9187/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/c70f060afb6726cd6d6967b58098b132/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e5fbf01e6290641c36c530f69c4933f0/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/65f363ab79fe29a38cb03d3a26481224/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/8ed57a0e1045b874244c9b4c8e15de6c/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/66e7d830f620dea05bafe0bb7f8d730b/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [io.grpc:grpc-android:1.41.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/d3a660716d24a6a4f464c3f968a74694/jetified-grpc-android-1.41.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1ab81d0edd9939b46f1c68526ea9a72/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/8fd1681e04159a5c8c70b91b4f4711da/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/debug/AndroidManifest.xml:1:1-8:12
+INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/debug/AndroidManifest.xml:1:1-8:12
+INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/debug/AndroidManifest.xml:1:1-8:12
+	package
+		ADDED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml:2:5-37
+		INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml:1:1-35:12
+		INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/debug/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml:1:1-35:12
+		INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml
+MERGED from [:firebase_auth] /home/smartpipel/FlutterProject/to_do_list/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /home/smartpipel/FlutterProject/to_do_list/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /home/smartpipel/FlutterProject/to_do_list/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /home/smartpipel/FlutterProject/to_do_list/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /home/smartpipel/FlutterProject/to_do_list/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /home/smartpipel/FlutterProject/to_do_list/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] /home/smartpipel/FlutterProject/to_do_list/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] /home/smartpipel/FlutterProject/to_do_list/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:google_sign_in] /home/smartpipel/FlutterProject/to_do_list/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:google_sign_in] /home/smartpipel/FlutterProject/to_do_list/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] /home/smartpipel/FlutterProject/to_do_list/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] /home/smartpipel/FlutterProject/to_do_list/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [androidx.multidex:multidex:2.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/7797f22e2d0cbaf8e622f3c20da3b55a/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/7797f22e2d0cbaf8e622f3c20da3b55a/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-analytics-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e74ea39fc4f2953aa039721958a27639/jetified-firebase-analytics-ktx-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e74ea39fc4f2953aa039721958a27639/jetified-firebase-analytics-ktx-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/efdec004161c0ef706d8ec293e62acc1/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/efdec004161c0ef706d8ec293e62acc1/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-analytics:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b2319a40aaafde11d0275e597f8ee22b/jetified-firebase-analytics-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b2319a40aaafde11d0275e597f8ee22b/jetified-firebase-analytics-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04d9739ccb7ccbdaf03e402a3f47159c/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04d9739ccb7ccbdaf03e402a3f47159c/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/bce616f231b570cdf28547b2dc639506/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/bce616f231b570cdf28547b2dc639506/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/0bf9fc2d592a0170bc569c54d12b471c/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/0bf9fc2d592a0170bc569c54d12b471c/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5ad2b4bdbf2416964b1966de4bd54e60/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5ad2b4bdbf2416964b1966de4bd54e60/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b646a1c3488e0fa90dc6654323ab235e/jetified-firebase-installations-17.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b646a1c3488e0fa90dc6654323ab235e/jetified-firebase-installations-17.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b26f3222371201c405a1d76c84ec5bb2/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b26f3222371201c405a1d76c84ec5bb2/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/41f8f2bbffac253ca50fce0d711a5034/jetified-play-services-auth-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/41f8f2bbffac253ca50fce0d711a5034/jetified-play-services-auth-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/96d69566b844cef1d9ae3b5e0f9774a2/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/96d69566b844cef1d9ae3b5e0f9774a2/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/6ff8bf50d7a56e469e79c64e7f2f4572/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/6ff8bf50d7a56e469e79c64e7f2f4572/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/4917d5905a62a2ef1addd59545e9ff67/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/4917d5905a62a2ef1addd59545e9ff67/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/453d2af98012e860dfc2db3e562e1e16/jetified-firebase-database-collection-18.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/453d2af98012e860dfc2db3e562e1e16/jetified-firebase-database-collection-18.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/f58498a3641a0b4078db8eb0d24ddce5/jetified-play-services-base-17.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/f58498a3641a0b4078db8eb0d24ddce5/jetified-play-services-base-17.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/50c1950e6a111b432f23877c07c740f3/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/50c1950e6a111b432f23877c07c740f3/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04a238a7c17235c75ca5016a61bbb90e/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04a238a7c17235c75ca5016a61bbb90e/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5d4c4841e85ea0afca8c64ab9ceef939/jetified-play-services-measurement-sdk-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5d4c4841e85ea0afca8c64ab9ceef939/jetified-play-services-measurement-sdk-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/678a1c7e564e226554b957d864c505c2/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/678a1c7e564e226554b957d864c505c2/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e37032e4884bb0ef565745c445d33ad8/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e37032e4884bb0ef565745c445d33ad8/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/7f91de8b990f8d3199aae3bbd913b939/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/7f91de8b990f8d3199aae3bbd913b939/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/f6a035b7a02376db2de86bdb22cedf12/jetified-play-services-measurement-base-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/f6a035b7a02376db2de86bdb22cedf12/jetified-play-services-measurement-base-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/72edf14769820a07c5040b9524c73bf5/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/72edf14769820a07c5040b9524c73bf5/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e16ae6648c3ce0fa167d94500d7d136a/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e16ae6648c3ce0fa167d94500d7d136a/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/4584bedaeba54923154b70564fc3a0fd/jetified-play-services-basement-17.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/4584bedaeba54923154b70564fc3a0fd/jetified-play-services-basement-17.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/286d132ad719554038e6e03c680fba42/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/286d132ad719554038e6e03c680fba42/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/acbabc431e49d18202dfd3bd305271c4/browser-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/acbabc431e49d18202dfd3bd305271c4/browser-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/36c1578aef3c28feb905b2582a286255/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/36c1578aef3c28feb905b2582a286255/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/47611c01de4bf4499950c3c65148e1c1/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/47611c01de4bf4499950c3c65148e1c1/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/a0ea217fd0c59b890be7c34e778233fa/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/a0ea217fd0c59b890be7c34e778233fa/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/ac741a76b899b06a665aed6d184f834b/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/ac741a76b899b06a665aed6d184f834b/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/efb52f2240c39df73633660a06682c6a/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/efb52f2240c39df73633660a06682c6a/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/fa3e16891ddce04251a93a836b74519f/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/fa3e16891ddce04251a93a836b74519f/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/085c7b6c79ae366c8fd7289b0d4b496a/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/085c7b6c79ae366c8fd7289b0d4b496a/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/41145e8e0ffb6bd164315122ebbefdd7/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/41145e8e0ffb6bd164315122ebbefdd7/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/9d8d59ea6112211fdb36ea451010cee2/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/9d8d59ea6112211fdb36ea451010cee2/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/4b745bdda1828b0401d257603b130f46/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/4b745bdda1828b0401d257603b130f46/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/3208ba5dfedba1b7ed2b8b2b0c63ee1b/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/3208ba5dfedba1b7ed2b8b2b0c63ee1b/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.6.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/db11aab57f7cc8d0296c43256cc67133/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/db11aab57f7cc8d0296c43256cc67133/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/6b3c789fb6dda81b1cca36057d6348fd/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/6b3c789fb6dda81b1cca36057d6348fd/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e4213cb94a720614f04621b2b3aaa2c7/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e4213cb94a720614f04621b2b3aaa2c7/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/67cf8845dd8b23d7cef0c0a7068b00e1/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/67cf8845dd8b23d7cef0c0a7068b00e1/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/a8939e8936a34fc59a49269c030d9b1e/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/a8939e8936a34fc59a49269c030d9b1e/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/603fb5128502bc6b9dd8c2456ea7f2f7/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/603fb5128502bc6b9dd8c2456ea7f2f7/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/30ac6fe13978c8c1b8905769a0d89150/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/30ac6fe13978c8c1b8905769a0d89150/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/7544ea2e3a4b8326e597dc1974b3ee50/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/7544ea2e3a4b8326e597dc1974b3ee50/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/bb88347195fdc2b62232bb52aa4c9187/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/bb88347195fdc2b62232bb52aa4c9187/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/c70f060afb6726cd6d6967b58098b132/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/c70f060afb6726cd6d6967b58098b132/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e5fbf01e6290641c36c530f69c4933f0/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e5fbf01e6290641c36c530f69c4933f0/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/65f363ab79fe29a38cb03d3a26481224/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/65f363ab79fe29a38cb03d3a26481224/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/8ed57a0e1045b874244c9b4c8e15de6c/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/8ed57a0e1045b874244c9b4c8e15de6c/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/66e7d830f620dea05bafe0bb7f8d730b/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/66e7d830f620dea05bafe0bb7f8d730b/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [io.grpc:grpc-android:1.41.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/d3a660716d24a6a4f464c3f968a74694/jetified-grpc-android-1.41.0/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.41.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/d3a660716d24a6a4f464c3f968a74694/jetified-grpc-android-1.41.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1ab81d0edd9939b46f1c68526ea9a72/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1ab81d0edd9939b46f1c68526ea9a72/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/8fd1681e04159a5c8c70b91b4f4711da/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/8fd1681e04159a5c8c70b91b4f4711da/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/debug/AndroidManifest.xml:6:5-66
+MERGED from [:google_sign_in] /home/smartpipel/FlutterProject/to_do_list/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
+MERGED from [:google_sign_in] /home/smartpipel/FlutterProject/to_do_list/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04d9739ccb7ccbdaf03e402a3f47159c/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04d9739ccb7ccbdaf03e402a3f47159c/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:14:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5ad2b4bdbf2416964b1966de4bd54e60/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5ad2b4bdbf2416964b1966de4bd54e60/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b646a1c3488e0fa90dc6654323ab235e/jetified-firebase-installations-17.0.0/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b646a1c3488e0fa90dc6654323ab235e/jetified-firebase-installations-17.0.0/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/678a1c7e564e226554b957d864c505c2/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/678a1c7e564e226554b957d864c505c2/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/7f91de8b990f8d3199aae3bbd913b939/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/7f91de8b990f8d3199aae3bbd913b939/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/debug/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/debug/AndroidManifest.xml:7:5-79
+MERGED from [:connectivity_plus] /home/smartpipel/FlutterProject/to_do_list/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+MERGED from [:connectivity_plus] /home/smartpipel/FlutterProject/to_do_list/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04d9739ccb7ccbdaf03e402a3f47159c/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04d9739ccb7ccbdaf03e402a3f47159c/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:13:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5ad2b4bdbf2416964b1966de4bd54e60/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5ad2b4bdbf2416964b1966de4bd54e60/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b646a1c3488e0fa90dc6654323ab235e/jetified-firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b646a1c3488e0fa90dc6654323ab235e/jetified-firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/678a1c7e564e226554b957d864c505c2/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/678a1c7e564e226554b957d864c505c2/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/7f91de8b990f8d3199aae3bbd913b939/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/7f91de8b990f8d3199aae3bbd913b939/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:24:5-79
+MERGED from [io.grpc:grpc-android:1.41.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/d3a660716d24a6a4f464c3f968a74694/jetified-grpc-android-1.41.0/AndroidManifest.xml:11:5-79
+MERGED from [io.grpc:grpc-android:1.41.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/d3a660716d24a6a4f464c3f968a74694/jetified-grpc-android-1.41.0/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from /home/smartpipel/FlutterProject/to_do_list/android/app/src/debug/AndroidManifest.xml:7:22-76
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [:firebase_auth] /home/smartpipel/FlutterProject/to_do_list/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /home/smartpipel/FlutterProject/to_do_list/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /home/smartpipel/FlutterProject/to_do_list/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /home/smartpipel/FlutterProject/to_do_list/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /home/smartpipel/FlutterProject/to_do_list/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [com.google.firebase:firebase-analytics-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e74ea39fc4f2953aa039721958a27639/jetified-firebase-analytics-ktx-20.0.0/AndroidManifest.xml:8:9-14:19
+MERGED from [com.google.firebase:firebase-analytics-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e74ea39fc4f2953aa039721958a27639/jetified-firebase-analytics-ktx-20.0.0/AndroidManifest.xml:8:9-14:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/efdec004161c0ef706d8ec293e62acc1/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/efdec004161c0ef706d8ec293e62acc1/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:12:9-18:19
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:74:9-80:19
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:74:9-80:19
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04d9739ccb7ccbdaf03e402a3f47159c/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:24.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04d9739ccb7ccbdaf03e402a3f47159c/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5ad2b4bdbf2416964b1966de4bd54e60/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5ad2b4bdbf2416964b1966de4bd54e60/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b646a1c3488e0fa90dc6654323ab235e/jetified-firebase-installations-17.0.0/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b646a1c3488e0fa90dc6654323ab235e/jetified-firebase-installations-17.0.0/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e74ea39fc4f2953aa039721958a27639/jetified-firebase-analytics-ktx-20.0.0/AndroidManifest.xml:10:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:37:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from [:firebase_auth] /home/smartpipel/FlutterProject/to_do_list/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
+ADDED from [:firebase_auth] /home/smartpipel/FlutterProject/to_do_list/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_auth] /home/smartpipel/FlutterProject/to_do_list/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_auth] /home/smartpipel/FlutterProject/to_do_list/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
+ADDED from [:cloud_firestore] /home/smartpipel/FlutterProject/to_do_list/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:cloud_firestore] /home/smartpipel/FlutterProject/to_do_list/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:cloud_firestore] /home/smartpipel/FlutterProject/to_do_list/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
+ADDED from [:firebase_core] /home/smartpipel/FlutterProject/to_do_list/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_core] /home/smartpipel/FlutterProject/to_do_list/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_core] /home/smartpipel/FlutterProject/to_do_list/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+meta-data#com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar
+ADDED from [com.google.firebase:firebase-analytics-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e74ea39fc4f2953aa039721958a27639/jetified-firebase-analytics-ktx-20.0.0/AndroidManifest.xml:11:13-13:85
+	android:value
+		ADDED from [com.google.firebase:firebase-analytics-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e74ea39fc4f2953aa039721958a27639/jetified-firebase-analytics-ktx-20.0.0/AndroidManifest.xml:13:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e74ea39fc4f2953aa039721958a27639/jetified-firebase-analytics-ktx-20.0.0/AndroidManifest.xml:12:17-126
+meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar
+ADDED from [com.google.firebase:firebase-common-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/efdec004161c0ef706d8ec293e62acc1/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/efdec004161c0ef706d8ec293e62acc1/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common-ktx:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/efdec004161c0ef706d8ec293e62acc1/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:16:17-113
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:27:9-44:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:29:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:31:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:30:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:32:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:28:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:33:13-43:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:27-75
+data
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:39:17-42:51
+	android:path
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:41:21-37
+	android:host
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:40:21-49
+	android:scheme
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:42:21-48
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:45:9-62:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:47:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:49:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:48:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:50:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:46:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:51:13-61:29
+service#com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:64:9-73:19
+	android:enabled
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:66:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:67:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:65:13-101
+intent-filter#action:name:com.google.firebase.auth.api.gms.service.START+category:name:android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:68:13-72:29
+action#com.google.firebase.auth.api.gms.service.START
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:17-89
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:25-86
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:77:13-79:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:79:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/e1d630c023f9f99bd1dda696bd17db37/jetified-firebase-auth-21.0.1/AndroidManifest.xml:78:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:24.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04d9739ccb7ccbdaf03e402a3f47159c/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:24.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04d9739ccb7ccbdaf03e402a3f47159c/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:24.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/04d9739ccb7ccbdaf03e402a3f47159c/jetified-firebase-firestore-24.0.0/AndroidManifest.xml:21:17-111
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5ad2b4bdbf2416964b1966de4bd54e60/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/678a1c7e564e226554b957d864c505c2/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/678a1c7e564e226554b957d864c505c2/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/7f91de8b990f8d3199aae3bbd913b939/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/7f91de8b990f8d3199aae3bbd913b939/jetified-play-services-measurement-sdk-api-20.0.0/AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5ad2b4bdbf2416964b1966de4bd54e60/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:24:22-65
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5ad2b4bdbf2416964b1966de4bd54e60/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5ad2b4bdbf2416964b1966de4bd54e60/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/5ad2b4bdbf2416964b1966de4bd54e60/jetified-play-services-measurement-api-20.0.0/AndroidManifest.xml:31:17-139
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b646a1c3488e0fa90dc6654323ab235e/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b646a1c3488e0fa90dc6654323ab235e/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/b646a1c3488e0fa90dc6654323ab235e/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/41f8f2bbffac253ca50fce0d711a5034/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/41f8f2bbffac253ca50fce0d711a5034/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/41f8f2bbffac253ca50fce0d711a5034/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/41f8f2bbffac253ca50fce0d711a5034/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/41f8f2bbffac253ca50fce0d711a5034/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/41f8f2bbffac253ca50fce0d711a5034/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/41f8f2bbffac253ca50fce0d711a5034/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/41f8f2bbffac253ca50fce0d711a5034/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/41f8f2bbffac253ca50fce0d711a5034/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/f58498a3641a0b4078db8eb0d24ddce5/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/f58498a3641a0b4078db8eb0d24ddce5/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/f58498a3641a0b4078db8eb0d24ddce5/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/f58498a3641a0b4078db8eb0d24ddce5/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/678a1c7e564e226554b957d864c505c2/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/678a1c7e564e226554b957d864c505c2/jetified-play-services-measurement-impl-20.0.0/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/cdd20d19db5a675d345b0d09292c62c7/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:40:13-87
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/4584bedaeba54923154b70564fc3a0fd/jetified-play-services-basement-17.1.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/4584bedaeba54923154b70564fc3a0fd/jetified-play-services-basement-17.1.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.1.0] /home/smartpipel/.gradle/caches/transforms-2/files-2.1/4584bedaeba54923154b70564fc3a0fd/jetified-play-services-basement-17.1.0/AndroidManifest.xml:24:13-58
