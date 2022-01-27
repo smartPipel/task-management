@@ -36,7 +36,8 @@ class SubmitTaskButtonComponent extends StatelessWidget {
               provider.getMonth.toString() +
               provider.getDay.toString() +
               ' ' +
-              provider.getHour);
+              provider.getHour +
+              ':00');
 
           print(date);
 

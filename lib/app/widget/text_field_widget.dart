@@ -36,7 +36,7 @@ class TextFieldWidget extends StatelessWidget {
           height: mainSpacing,
         ),
         TextFormField(
-          onTap: () => onTap!.call(),
+          onTap: () => onTap?.call(),
           controller: controller,
           validator: (value) {
             if (value!.isEmpty) {

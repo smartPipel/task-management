@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:to_do_list/app/config/routes/routes.dart';
 import 'package:to_do_list/app/constants/app_constants.dart';
-import 'package:to_do_list/app/modules/initialize-screen/view/initial.dart';
 import 'package:to_do_list/app/modules/login-screen/providers/login_screen_provider.dart';
 
 class LoginScreen extends StatefulWidget {
