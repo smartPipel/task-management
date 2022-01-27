@@ -1,5 +1,6 @@
 flutter_native_splash:
-  color: "#C0D8C0"
-  branding: assets/logo/task-note-logo.png
-  branding_mode: center
+  color: "#FFFFFF"
+  color_dark: "#FFFFFF"
+  image: assets/logo.png
+  web: false
   

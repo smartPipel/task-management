@@ -32,12 +32,15 @@ class SubmitTaskButtonComponent extends StatelessWidget {
         if (provider.getYear.toString().isNotEmpty &&
             provider.getHour.isNotEmpty &&
             formKey.currentState!.validate()) {
+          String month = provider.getMonth.toString();
+          if (month.length == 1) {
+            month = "0" + month;
+          }
           final date = DateTime.parse(provider.getYear.toString() +
-              provider.getMonth.toString() +
+              month +
               provider.getDay.toString() +
               ' ' +
-              provider.getHour +
-              ':00');
+              provider.getHour);
 
           print(date);
 

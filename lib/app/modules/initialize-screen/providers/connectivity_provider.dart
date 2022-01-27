@@ -8,7 +8,7 @@ class ConnectivityProvider with ChangeNotifier {
     });
   }
   String _isConnect = 'false';
-  String _message = 'Default';
+  String _message = 'Menyambungkan';
   String get isConnect => _isConnect;
 
   set isConnect(String value) {
